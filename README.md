@@ -43,7 +43,13 @@
 Требования к системе:
 - PHP 8.2+ 
 - MariaDB 10.4+ или MySQL 8.0+
-- Apache 2.4+ 
+- Apache 2.4+
+
+Email админа: d@gmail.com
+Пароль админа: admin123
+
+Email одного из сотрудников: jantas@gmail.com
+Пароль одного из сотрудников: amanjol123
 
 
 
