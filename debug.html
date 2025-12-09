@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US" class="h-100">
+<head>
+    <title>Onboarding Tracker</title>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link type="image/x-icon" href="/favicon.ico" rel="icon">
+<link href="/assets/7cc6c077/css/bootstrap.css" rel="stylesheet">
+<link href="/css/site.css" rel="stylesheet">
+<link href="/css/onboarding.css" rel="stylesheet"></head>
+<body class="d-flex flex-column h-100">
+
+<header id="header">
+    <nav id="w51" class="navbar-expand-md position-relative navbar">
+<div class="container">
+<a class="navbar-brand" href="/index-test.php"><img src="/images/1.png" alt="logo" style="width: 60px; height: 60px; object-fit: contain;"></a>
+<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#w51-collapse" aria-controls="w51-collapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div id="w51-collapse" class="collapse navbar-collapse">
+<ul id="w52" class="navbar-nav me-auto nav" style="min-width: 180px;"></ul><ul id="w53" class="navbar-nav position-absolute start-50 translate-middle-x d-flex gap-4 nav"><li class="nav-item"><a class="nav-link" href="/index-test.php/site/index">Главная</a></li>
+<li class="nav-item"><a class="nav-link" href="/index-test.php/site/signup">Регистрация</a></li></ul><ul id="w54" class="navbar-nav ms-auto nav" style="min-width: 180px; justify-content: flex-end;"><li class="nav-item"><a class="nav-link" href="/index-test.php/site/login">Войти</a></li></ul></div>
+</div>
+</nav></header>
+
+<main id="main" class="flex-shrink-0" role="main">
+    <div class="container">
+        <div class="module-create">
+    <div class="form-reg">
+        <div class="title-reg">
+            <h1 class="zag-admin">Добавление модуля</h1>
+        </div>
+        
+<div class="module-form">
+
+    <form id="w50" action="/admin/module/create" method="post">
+    <div class="form-group field-module-category_id required">
+<label class="control-label" for="module-category_id">Категория</label>
+<select id="module-category_id" class="form-control" name="Module[category_id]" aria-required="true">
+<option value="">Выберите категорию</option>
+<option value="756">Отладочная категория</option>
+</select>
+
+<div class="help-block"></div>
+</div>
+
+    <div class="form-group field-module-title required">
+<label class="control-label" for="module-title">Название</label>
+<input type="text" id="module-title" class="form-control" name="Module[title]" maxlength="256" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group field-module-description required">
+<label class="control-label" for="module-description">Описание</label>
+<textarea id="module-description" class="form-control" name="Module[description]" rows="6" aria-required="true"></textarea>
+
+<div class="help-block"></div>
+</div>
+    <div class="form-group">
+        <button type="submit" class="btn-form">Сохранить</button>    </div>
+
+    </form>
+</div>
+    </div>
+</div>
+    </div>
+</main>
+
+<footer id="footer" class="mt-auto py-3" style="background-color: #0ea5e9">
+    <div class="container">
+        <div class="row text-muted">
+            <div class="text-center text-md-center" style="color: white">&copy; Onboarding
+                Tracker 2025</div>
+        </div>
+    </div>
+</footer>
+
+<script src="/assets/58918072/jquery.js"></script>
+<script src="/assets/b36ebc9d/yii.js"></script>
+<script src="/assets/b36ebc9d/yii.validation.js"></script>
+<script src="/assets/b36ebc9d/yii.activeForm.js"></script>
+<script src="/assets/7cc6c077/js/bootstrap.bundle.js"></script>
+<script>jQuery(function ($) {
+jQuery('#w50').yiiActiveForm([{"id":"module-category_id","name":"category_id","container":".field-module-category_id","input":"#module-category_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Категория cannot be blank."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Категория must be an integer.","skipOnEmpty":1});}},{"id":"module-title","name":"title","container":".field-module-title","input":"#module-title","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Название cannot be blank."});yii.validation.string(value, messages, {"message":"Название must be a string.","max":256,"tooLong":"Название should contain at most 256 characters.","skipOnEmpty":1});}},{"id":"module-description","name":"description","container":".field-module-description","input":"#module-description","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Описание cannot be blank."});yii.validation.string(value, messages, {"message":"Описание must be a string.","skipOnEmpty":1});}}], []);
+});</script></body>
+</html>

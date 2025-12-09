@@ -1,0 +1,7 @@
+actor: FunctionalTester
+modules:
+  enabled:
+    - Yii2
+  config:
+    Yii2:
+      configFile: 'config/test.php'

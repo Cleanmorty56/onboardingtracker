@@ -1,0 +1,11 @@
+paths:
+  tests: tests
+  output: tests/_output
+  data: tests/_data
+  support: tests/_support
+  log: tests/_output
+
+actor_suffix: Tester
+
+settings:
+  bootstrap: _bootstrap.php
